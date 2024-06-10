@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://e874-191-240-121-34.ngrok-free.app/server//admin/getPedidos -->
+<html lang="en" class="dark gs gs-light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title data-rh="true"></title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><style id="expo-reset">#root,body,html{height:100%}body{overflow:hidden}#root{display:flex}</style><style id="react-native-stylesheet">[stylesheet-group="0"]{}
+body{margin:0;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-search-results-button,input::-webkit-search-results-decoration{display:none;}
+[stylesheet-group="1"]{}
+.css-accessibilityImage-9pa8cd{bottom:0px;height:100%;left:0px;opacity:0;position:absolute;right:0px;top:0px;width:100%;z-index:-1;}
+.css-text-146c3p1{background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;color:rgba(0,0,0,1.00);display:inline;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;list-style:none;margin:0px;padding:0px;position:relative;text-align:start;text-decoration:none;white-space:pre-wrap;word-wrap:break-word;}
+.css-textHasAncestor-1jxf684{background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;color:inherit;display:inline;font:inherit;list-style:none;margin:0px;padding:0px;position:relative;text-align:inherit;text-decoration:none;white-space:inherit;word-wrap:break-word;}
+.css-textinput-11aywtz{-moz-appearance:textfield;-webkit-appearance:none;background-color:rgba(0,0,0,0.00);border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-left-radius:0px;border-top-right-radius:0px;border:0 solid black;box-sizing:border-box;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0px;padding:0px;resize:none;}
+.css-view-175oi2r{align-items:stretch;background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;display:flex;flex-basis:auto;flex-direction:column;flex-shrink:0;list-style:none;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;text-decoration:none;z-index:0;}
+[stylesheet-group="2"]{}
+.r-borderColor-11mg6pl{border-bottom-color:rgba(255,255,255,1.00);border-left-color:rgba(255,255,255,1.00);border-right-color:rgba(255,255,255,1.00);border-top-color:rgba(255,255,255,1.00);}
+.r-borderColor-1awa8pu{border-bottom-color:rgba(101,119,134,1.00);border-left-color:rgba(101,119,134,1.00);border-right-color:rgba(101,119,134,1.00);border-top-color:rgba(101,119,134,1.00);}
+.r-borderColor-1d4xg89{border-bottom-color:rgba(170,184,194,1.00);border-left-color:rgba(170,184,194,1.00);border-right-color:rgba(170,184,194,1.00);border-top-color:rgba(170,184,194,1.00);}
+.r-borderColor-1jyn79y{border-bottom-color:rgba(0,150,136,1.00);border-left-color:rgba(0,150,136,1.00);border-right-color:rgba(0,150,136,1.00);border-top-color:rgba(0,150,136,1.00);}
+.r-borderColor-1rvyss1{border-bottom-color:rgba(255,255,255,0.20);border-left-color:rgba(255,255,255,0.20);border-right-color:rgba(255,255,255,0.20);border-top-color:rgba(255,255,255,0.20);}
+.r-borderColor-4a18lf{border-bottom-color:rgba(255,0,0,1.00);border-left-color:rgba(255,0,0,1.00);border-right-color:rgba(255,0,0,1.00);border-top-color:rgba(255,0,0,1.00);}
+.r-borderColor-60ke3l{border-bottom-color:rgba(0,128,0,1.00);border-left-color:rgba(0,128,0,1.00);border-right-color:rgba(0,128,0,1.00);border-top-color:rgba(0,128,0,1.00);}
+.r-borderColor-9x6qib{border-bottom-color:rgba(204,214,221,1.00);border-left-color:rgba(204,214,221,1.00);border-right-color:rgba(204,214,221,1.00);border-top-color:rgba(204,214,221,1.00);}
+.r-borderColor-fx7oqy{border-bottom-color:rgba(0,0,255,1.00);border-left-color:rgba(0,0,255,1.00);border-right-color:rgba(0,0,255,1.00);border-top-color:rgba(0,0,255,1.00);}
+.r-borderRadius-1f0042m{border-bottom-left-radius:5px;border-bottom-right-radius:5px;border-top-left-radius:5px;border-top-right-radius:5px;}
+.r-borderRadius-1j16mh1{border-bottom-left-radius:100%;border-bottom-right-radius:100%;border-top-left-radius:100%;border-top-right-radius:100%;}
+.r-borderRadius-1jkafct{border-bottom-left-radius:2px;border-bottom-right-radius:2px;border-top-left-radius:2px;border-top-right-radius:2px;}
+.r-borderRadius-1q9bdsx{border-bottom-left-radius:12px;border-bottom-right-radius:12px;border-top-left-radius:12px;border-top-right-radius:12px;}
+.r-borderRadius-z2wwpe{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top-left-radius:4px;border-top-right-radius:4px;}
+.r-borderStyle-1phboty{border-bottom-style:solid;border-left-style:solid;border-right-style:solid;border-top-style:solid;}
+.r-borderWidth-d045u9{border-bottom-width:2px;border-left-width:2px;border-right-width:2px;border-top-width:2px;}
+.r-borderWidth-rs99b7{border-bottom-width:1px;border-left-width:1px;border-right-width:1px;border-top-width:1px;}
+.r-display-6koalj{display:flex;}
+.r-display-hvic4v{display:none;}
+.r-display-krxsd3{display:-webkit-box;}
+.r-display-xoduu5{display:inline-flex;}
+.r-flex-13awgt0{flex:1;}
+.r-margin-1bq2mok{margin:3px;}
+.r-margin-crgep1{margin:0px;}
+.r-margin-ywje51{margin:auto;}
+.r-overflow-1udh08x{overflow-x:hidden;overflow-y:hidden;}
+.r-padding-d23pfw{padding:24px;}
+.r-padding-edyy15{padding:8px;}
+.r-padding-t60dpp{padding:0px;}
+[stylesheet-group="2.1"]{}
+.r-marginBlock-11nzuo4{margin-bottom:1em;margin-top:1em;}
+.r-marginBlock-184id4b{margin-bottom:12px;margin-top:12px;}
+.r-marginBlock-1946khe{margin-bottom:1.67em;margin-top:1.67em;}
+.r-marginBlock-19oforl{margin-bottom:0.67em;margin-top:0.67em;}
+.r-marginBlock-1hga0el{margin-bottom:1.33em;margin-top:1.33em;}
+.r-marginBlock-1jm7qrm{margin-bottom:2.33em;margin-top:2.33em;}
+.r-marginBlock-1u31v3z{margin-bottom:0.83em;margin-top:0.83em;}
+.r-marginBlock-n5f61p{margin-bottom:3px;margin-top:3px;}
+.r-marginInline-1xpp3t0{margin-left:16px;margin-right:16px;}
+.r-marginInline-jdiy1a{margin-left:11px;margin-right:11px;}
+.r-marginInline-lcslpx{margin-left:10px;margin-right:10px;}
+.r-paddingBlock-11f147o{padding-bottom:8px;padding-top:8px;}
+.r-paddingBlock-1mmae3n{padding-bottom:12px;padding-top:12px;}
+.r-paddingBlock-cnw61z{padding-bottom:4px;padding-top:4px;}
+.r-paddingBlock-rehuqn{padding-bottom:5px;padding-top:5px;}
+.r-paddingBlock-ytbthy{padding-bottom:10px;padding-top:10px;}
+.r-paddingInline-11gswi8{padding-left:3px;padding-right:3px;}
+.r-paddingInline-1ntr0p{padding-left:5px;padding-right:5px;}
+.r-paddingInline-1ubuhtd{padding-left:10px;padding-right:10px;}
+.r-paddingInline-3o4zer{padding-left:12px;padding-right:12px;}
+.r-paddingInline-cxgwc0{padding-left:24px;padding-right:24px;}
+.r-paddingInline-is05cd{padding-left:8px;padding-right:8px;}
+.r-paddingInline-n7gxbd{padding-left:4px;padding-right:4px;}
+.r-paddingInline-t15j4v{padding-left:27px;padding-right:27px;}
+.r-paddingInline-ubg91z{padding-left:15px;padding-right:15px;}
+[stylesheet-group="2.2"]{}
+.r-insetInlineStart-10s2tm5{left:0%;}
+.r-insetInlineStart-16o8guy{right:100%;}
+.r-insetInlineStart-dqe1q{right:0%;}
+.r-insetInlineStart-rci37q{left:100%;}
+.r-marginInlineEnd-1ez5h0i{margin-left:4px;}
+.r-marginInlineEnd-1gs4q39{margin-right:4px;}
+[stylesheet-group="3"]{}
+.r-WebkitBoxOrient-8akbws{-webkit-box-orient:vertical;}
+.r-WebkitOverflowScrolling-150rngu{-webkit-overflow-scrolling:touch;}
+.r-alignItems-1awozwy{align-items:center;}
+.r-alignItems-1habvwh{align-items:flex-start;}
+.r-alignItems-1oszu61{align-items:stretch;}
+.r-alignItems-obd0qt{align-items:flex-end;}
+.r-alignSelf-173mn98{align-self:flex-end;}
+.r-alignSelf-1kihuf0{align-self:center;}
+.r-alignSelf-k200y{align-self:flex-start;}
+.r-animationDuration-17bb2tj{animation-duration:0.75s;}
+.r-animationDuration-1ay1djp{animation-duration:1s;}
+.r-animationDuration-1ielgck{animation-duration:300ms;}
+.r-animationIterationCount-1muvv40{animation-iteration-count:infinite;}
+.r-animationKeyframes-13aq9py{animation-name:r-animation-1iq689l;}
+.r-animationKeyframes-1qulhi1{animation-name:r-animation-1pzkwqh;}
+.r-animationKeyframes-1yef0xd{animation-name:r-animation-11cv4x;}
+.r-animationKeyframes-ebwn4k{animation-name:r-animation-q67da2;}
+.r-animationKeyframes-g3mlsw{animation-name:r-animation-t2lo5v;}
+.r-animationKeyframes-xx3c9p{animation-name:r-animation-imtty0;}
+.r-animationPlayState-1abnn5w{animation-play-state:paused;}
+.r-animationTimingFunction-1ldzwu0{animation-timing-function:linear;}
+.r-animationTimingFunction-1uypc71{animation-timing-function:ease-in;}
+.r-animationTimingFunction-nvplwv{animation-timing-function:ease-out;}
+.r-appearance-30o5oe{-moz-appearance:none;-ms-appearance:none;-webkit-appearance:none;appearance:none;}
+.r-backgroundColor-11mpjr4{background-color:rgba(223,223,223,1.00);}
+.r-backgroundColor-11udlyb{background-color:rgba(0,150,136,1.00);}
+.r-backgroundColor-14lw9ot{background-color:rgba(255,255,255,1.00);}
+.r-backgroundColor-14sbq61{background-color:rgba(33,150,243,1.00);}
+.r-backgroundColor-1ffj0ar{background-color:rgba(0,0,0,0.40);}
+.r-backgroundColor-1kfbv51{background-color:rgba(178,34,34,1.00);}
+.r-backgroundColor-1niwhzg{background-color:rgba(0,0,0,0.00);}
+.r-backgroundColor-98uye2{background-color:rgba(255,255,0,1.00);}
+.r-backgroundColor-dkge59{background-color:rgba(170,184,194,1.00);}
+.r-backgroundColor-kemksi{background-color:rgba(0,0,0,1.00);}
+.r-backgroundColor-u92y06{background-color:rgba(255,165,0,1.00);}
+.r-backgroundImage-rs94m5{background-image:url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgdmVyc2lvbj0iMS4xIgogICB2aWV3Qm94PSIwIDAgMSAxIgogICBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWluWU1pbiBtZWV0Ij4KICA8cGF0aAogICAgIGQ9Ik0gMC4wNDAzODA1OSwwLjYyNjc3NjcgMC4xNDY0NDY2MSwwLjUyMDcxMDY4IDAuNDI5Mjg5MzIsMC44MDM1NTMzOSAwLjMyMzIyMzMsMC45MDk2MTk0MSB6IE0gMC4yMTcxNTcyOSwwLjgwMzU1MzM5IDAuODUzNTUzMzksMC4xNjcxNTcyOSAwLjk1OTYxOTQxLDAuMjczMjIzMyAwLjMyMzIyMzMsMC45MDk2MTk0MSB6IgogICAgIGlkPSJyZWN0Mzc4MCIKICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lIiAvPgo8L3N2Zz4K");}
+.r-backgroundPosition-1mrlafo{background-position:0;}
+.r-backgroundPosition-vvn4in{background-position:center;}
+.r-backgroundRepeat-17leim2{background-repeat:repeat;}
+.r-backgroundRepeat-u6sd8q{background-repeat:no-repeat;}
+.r-backgroundSize-1sxrcry{background-size:auto;}
+.r-backgroundSize-4gszlv{background-size:cover;}
+.r-backgroundSize-ehq7j7{background-size:contain;}
+.r-backgroundSize-x3cy2q{background-size:100% 100%;}
+.r-borderBottomColor-1euagl{border-bottom-color:rgba(50,50,50,1.00);}
+.r-borderBottomLeftRadius-6t5ypu{border-bottom-left-radius:4px;}
+.r-borderBottomRightRadius-1dpl46z{border-bottom-right-radius:4px;}
+.r-borderBottomWidth-qklmqi{border-bottom-width:1px;}
+.r-borderTopLeftRadius-kicko2{border-top-left-radius:4px;}
+.r-borderTopRightRadius-notknq{border-top-right-radius:4px;}
+.r-borderTopWidth-5kkj8d{border-top-width:1px;}
+.r-bottom-15o5oer{bottom:auto;}
+.r-bottom-1nlw0im{bottom:8px;}
+.r-bottom-1p0dtai{bottom:0px;}
+.r-boxShadow-1ewcgjf{box-shadow:0px 1px 3px rgba(0,0,0,0.5);}
+.r-caretColor-van48c{caret-color:transparent;}
+.r-color-18u1ve8{color:rgba(255,255,255,0.40);}
+.r-color-5zqcb5{color:rgba(255,255,255,0.70);}
+.r-color-c68hjy{color:rgba(161,161,161,1.00);}
+.r-color-cqee49{color:rgba(0,0,0,1.00);}
+.r-color-jwli3a{color:rgba(255,255,255,1.00);}
+.r-color-kpc20e{color:rgba(255,255,255,0.80);}
+.r-cursor-1ei5mc7{cursor:inherit;}
+.r-cursor-1loqt21{cursor:pointer;}
+.r-cursor-7q8q6z{cursor:default;}
+.r-flexBasis-1iusvr4{flex-basis:0px;}
+.r-flexBasis-1mlwlqe{flex-basis:auto;}
+.r-flexBasis-1ro0kt6{flex-basis:0%;}
+.r-flexDirection-18u37iz{flex-direction:row;}
+.r-flexDirection-1d5kdc7{flex-direction:column-reverse;}
+.r-flexDirection-1euycsn{flex-direction:row-reverse;}
+.r-flexDirection-eqz5dr{flex-direction:column;}
+.r-flexGrow-16y2uox{flex-grow:1;}
+.r-flexShrink-1wbh5a2{flex-shrink:1;}
+.r-flexWrap-1w6e6rj{flex-wrap:wrap;}
+.r-fontFamily-1aiqnjv{font-family:monospace,monospace;}
+.r-fontFamily-1pm8pkb{font-family:Courier;}
+.r-fontFamily-1qd0xha{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+.r-fontSize-10x49cs{font-size:10px;}
+.r-fontSize-1b43r93{font-size:14px;}
+.r-fontSize-1enofrn{font-size:12px;}
+.r-fontSize-1i10wst{font-size:18px;}
+.r-fontSize-1inkyih{font-size:17px;}
+.r-fontSize-1lijs1h{font-size:1.5em;}
+.r-fontSize-1ui5ee8{font-size:32px;}
+.r-fontSize-3i2nvb{font-size:36px;}
+.r-fontSize-6e8ixz{font-size:2em;}
+.r-fontSize-7cikom{font-size:inherit;}
+.r-fontSize-adyw6z{font-size:20px;}
+.r-fontSize-bzi31h{font-size:1em;}
+.r-fontSize-n230yh{font-size:0.83em;}
+.r-fontSize-n6v787{font-size:13px;}
+.r-fontSize-tg2c11{font-size:1.17em;}
+.r-fontSize-ubezar{font-size:16px;}
+.r-fontSize-ydqdv4{font-size:0.67em;}
+.r-fontStyle-36ujnk{font-style:italic;}
+.r-fontWeight-16dba41{font-weight:400;}
+.r-fontWeight-1kfrs79{font-weight:600;}
+.r-fontWeight-1od2jal{font-weight:300;}
+.r-fontWeight-majxgm{font-weight:500;}
+.r-fontWeight-vw2c0b{font-weight:bold;}
+.r-forcedColorAdjust-1c6unfx{forced-color-adjust:none;}
+.r-height-10ptun7{height:16px;}
+.r-height-10rkof1{height:0.5em;}
+.r-height-1472mwg{height:24px;}
+.r-height-1dernwh{height:70%;}
+.r-height-1pexk7n{height:14px;}
+.r-height-1pi2tsx{height:100%;}
+.r-height-1r8g8re{height:36px;}
+.r-height-4v7adb{height:5px;}
+.r-height-76blku{height:21px;}
+.r-height-z80fyv{height:20px;}
+.r-includeFontPadding-1rsjblm{include-font-padding:false;}
+.r-justifyContent-1777fci{justify-content:center;}
+.r-justifyContent-17s6mgv{justify-content:flex-end;}
+.r-justifyContent-1h0z5md{justify-content:flex-start;}
+.r-left-1d2f490{left:0px;}
+.r-left-1r74h94{left:8px;}
+.r-left-l4djrs{left:3px;}
+.r-letterSpacing-356f0p{letter-spacing:0.35px;}
+.r-lineHeight-14yzgew{line-height:18px;}
+.r-lineHeight-1cwl3u0{line-height:16px;}
+.r-lineHeight-rjixqe{line-height:20px;}
+.r-marginBottom-15d164r{margin-bottom:10px;}
+.r-marginBottom-6gpygo{margin-bottom:12px;}
+.r-marginBottom-d0pm55{margin-bottom:5px;}
+.r-marginLeft-1jkjb{margin-left:8px;}
+.r-marginLeft-1joea0r{margin-left:20px;}
+.r-marginLeft-1ozfoo7{margin-left:15px;}
+.r-marginLeft-1wrzk55{margin-left:-14.5px;}
+.r-marginRight-zso239{margin-right:10px;}
+.r-marginTop-19h5ruw{margin-top:15px;}
+.r-marginTop-19qrga8{margin-top:3px;}
+.r-marginTop-1mnahxq{margin-top:0px;}
+.r-maxWidth-dnmrzs{max-width:100%;}
+.r-minWidth-1uxf3jb{min-width:25px;}
+.r-minWidth-60vfwk{min-width:1px;}
+.r-opacity-1g80hic{opacity:0.8;}
+.r-opacity-6dt33c{opacity:1;}
+.r-opacity-icoktb{opacity:0.5;}
+.r-opacity-orgf3d{opacity:0;}
+.r-outlineStyle-1ny4l3l{outline-style:none;}
+.r-overflowX-11yh6sk{overflow-x:hidden;}
+.r-overflowX-lltvgl{overflow-x:auto;}
+.r-overflowY-1rnoaur{overflow-y:auto;}
+.r-overflowY-buy8e9{overflow-y:hidden;}
+.r-paddingBottom-1mi0q7o{padding-bottom:10px;}
+.r-paddingBottom-97e31f{padding-bottom:env(safe-area-inset-bottom);}
+.r-paddingBottom-kzbkwu{padding-bottom:12px;}
+.r-paddingLeft-1hfyk0a{padding-left:10px;}
+.r-paddingLeft-bv2aro{padding-left:env(safe-area-inset-left);}
+.r-paddingRight-hxflta{padding-right:env(safe-area-inset-right);}
+.r-paddingTop-10xqauy{padding-top:env(safe-area-inset-top);}
+.r-placeholderTextColor-6taxm2:-ms-input-placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-placeholderTextColor-6taxm2::-moz-placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-placeholderTextColor-6taxm2::-webkit-input-placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-placeholderTextColor-6taxm2::placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-pointerEvents-105ug2t{pointer-events:auto!important;}
+.r-pointerEvents-12vffkv>*{pointer-events:auto;}
+.r-pointerEvents-12vffkv{pointer-events:none!important;}
+.r-pointerEvents-633pao{pointer-events:none!important;}
+.r-pointerEvents-ah5dr5>*{pointer-events:none;}
+.r-pointerEvents-ah5dr5{pointer-events:auto!important;}
+.r-position-1xcajam{position:fixed;}
+.r-position-gtdqiz{position:-webkit-sticky;position:sticky;}
+.r-position-u8s1d{position:absolute;}
+.r-right-zchlnj{right:0px;}
+.r-scrollSnapAlign-cpa5s6{scroll-snap-align:start;}
+.r-scrollSnapType-1ocf4r9{scroll-snap-type:y mandatory;}
+.r-scrollSnapType-mfh4gg{scroll-snap-type:x mandatory;}
+.r-scrollbarWidth-2eszeu::-webkit-scrollbar{display:none}
+.r-scrollbarWidth-2eszeu{scrollbar-width:none;}
+.r-textAlign-1ff274t{text-align:right;}
+.r-textAlign-fdjqy7{text-align:left;}
+.r-textAlign-q4m81j{text-align:center;}
+.r-textDecorationLine-142tt33{-webkit-text-decoration-line:line-through;text-decoration-line:line-through;}
+.r-textDecorationLine-1ddef8g{-webkit-text-decoration-line:underline;text-decoration-line:underline;}
+.r-textDecorationStyle-1a2p6p6{-webkit-text-decoration-style:solid;text-decoration-style:solid;}
+.r-textOverflow-1udbk01{text-overflow:ellipsis;}
+.r-textTransform-tsynxw{text-transform:uppercase;}
+.r-top-14eup4l{top:3px;}
+.r-top-1ve781c{top:7px;}
+.r-top-ipm5af{top:0px;}
+.r-top-qfi6ny{top:30000px;}
+.r-touchAction-19z077z{touch-action:none;}
+.r-touchAction-1otgn73{touch-action:manipulation;}
+.r-transform-10v3vxq{transform:scaleX(-1);}
+.r-transform-173mzie{transform:scaleY(-1);}
+.r-transform-agouwx{transform:translateZ(0);}
+.r-transform-bi4vy9{transform:translateY(100%);}
+.r-transform-ghxds0{transform:translateY(0%);}
+.r-transform-nygpdh{transform:scaleX(1);}
+.r-transitionDuration-13tjlyg{transition-duration:0.1s;}
+.r-transitionDuration-eafdt9{transition-duration:0.15s;}
+.r-transitionDuration-wfqgy4{transition-duration:100ms;}
+.r-transitionProperty-1i6wzkk{-moz-transition-property:opacity;-webkit-transition-property:opacity;transition-property:opacity;}
+.r-userSelect-1xnzce8{-moz-user-select:text;-webkit-user-select:text;user-select:text;}
+.r-userSelect-lrvibr{-moz-user-select:none;-webkit-user-select:none;user-select:none;}
+.r-visibility-11j9u27{visibility:hidden;}
+.r-whiteSpace-3s2u2q{white-space:nowrap;}
+.r-width-13qz1uu{width:100%;}
+.r-width-19wmn03{width:20px;}
+.r-width-1acpoxo{width:36px;}
+.r-width-1h2t8mc{width:0px;}
+.r-width-1janqcz{width:16px;}
+.r-width-1xzupcd{width:13px;}
+.r-width-lrsllp{width:24px;}
+.r-wordWrap-1iln25a{word-wrap:normal;}
+.r-zIndex-1sg8ghl{z-index:1000;}
+.r-zIndex-1wyyakw{z-index:-1;}
+.r-zIndex-417010{z-index:0;}
+.r-zIndex-mhe3cw{z-index:10;}
+.r-zIndex-r5vmyo{z-index:1002;}
+.r-zIndex-sfbmgh{z-index:9999;}
+.r-zIndex-yie26v{z-index:1001;}
+@-webkit-keyframes r-animation-11cv4x{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+@-webkit-keyframes r-animation-1iq689l{0%{transform:translateY(0%);}100%{transform:translateY(100%);}}
+@-webkit-keyframes r-animation-1pzkwqh{0%{transform:translateY(100%);}100%{transform:translateY(0%);}}
+@-webkit-keyframes r-animation-imtty0{0%{opacity:0;}100%{opacity:1;}}
+@-webkit-keyframes r-animation-q67da2{0%{transform:translateX(-100%);}100%{transform:translateX(400%);}}
+@-webkit-keyframes r-animation-t2lo5v{0%{opacity:1;}100%{opacity:0;}}
+@keyframes r-animation-11cv4x{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+@keyframes r-animation-1iq689l{0%{transform:translateY(0%);}100%{transform:translateY(100%);}}
+@keyframes r-animation-1pzkwqh{0%{transform:translateY(100%);}100%{transform:translateY(0%);}}
+@keyframes r-animation-imtty0{0%{opacity:0;}100%{opacity:1;}}
+@keyframes r-animation-q67da2{0%{transform:translateX(-100%);}100%{transform:translateX(400%);}}
+@keyframes r-animation-t2lo5v{0%{opacity:1;}100%{opacity:0;}}</style><style type="text/css">:root [href^="//mage98rquewz.com/"], :root [href^="//x4pollyxxpush.com/"], :root zeus-ad, :root span[id^="ezoic-pub-ad-placeholder-"], :root ins.adsbygoogle[data-ad-slot], :root guj-ad, :root gpt-ad, :root div[id^="zergnet-widget"], :root div[id^="vuukle-ad-"], :root div[id^="taboola-stream-"], :root div[id^="sticky_ad_"], :root div[id^="pa_sticky_ad_box_middle_"], :root div[id^="optidigital-adslot"], :root div[id^="gpt_ad_"], :root div[id^="ezoic-pub-ad-"], :root div[id^="dfp-ad-"], :root div[id^="crt-"][style], :root div[id^="adspot-"], :root div[id^="adrotate_widgets-"], :root ps-connatix-module, :root div[id^="ad_position_"], :root div[id^="ad-div-"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root div[data-native_ad], :root div[data-native-ad], :root div[data-id-advertdfpconf], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-alias="300x250 Ad 2"], :root div[data-adzone], :root div[data-adunit-path], :root div[data-adname], :root div[data-ad-wrapper], :root div[data-ad-placeholder], :root div[class^="native-ad-"], :root div[data-dfp-id], :root div[class^="kiwi-ad-wrapper"], :root div[aria-label="Ads"], :root display-ads, :root display-ad-component, :root bottomadblock, :root atf-ad-slot, :root aside[id^="adrotate_widgets-"], :root ark-top-ad, :root amp-fx-flying-carpet, :root amp-embed[type="taboola"], :root amp-connatix-player, :root amp-ad-custom, :root amp-ad, :root div[id^="google_dfp_"], :root ad-slot, :root ad-shield-ads, :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="https://www.onlineusershielder.com/"], :root a[href^="https://www.nudeidols.com/cams/"], :root a[href^="https://financeads.net/tc.php?"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://www.kingsoffetish.com/tour?partner_id="], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://www.highperformancecpmgate.com/"], :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href^="https://lnkxt.bannerator.com/"], :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root a[href^="https://www.friendlyduck.com/AF_"], :root a[href^="https://www.financeads.net/tc.php?"], :root [href^="https://www.herbanomic.com/"] > img, :root a[href^="https://maymooth-stopic.com/"], :root a[href^="https://www.dql2clk.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.dating-finder.com/signup/?ai_d="], :root a[href^="https://explore-site.com/"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root a[href^="https://www.adxsrve.com/"], :root [data-template-type="nativead"], :root a[href^="https://www.endorico.com/Smartlink/"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href^="https://voluum.prom-xcams.com/"], :root a[href^="https://twinrdsrv.com/"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://track.1234sd123.com/"], :root a[href^="https://torguard.net/aff.php"] > img, :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://tatrck.com/"], :root a[href^="https://click.candyoffers.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://t.aslnk.link/"], :root a[href^="https://t.ajrkm3.com/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://safesurfingtoday.com/"][href*="?skip="], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root a[href^="https://t.acam.link/"], :root a[href*="//daichoho.com/"], :root a[href^="https://syndication.optimizesrv.com/"], :root a[href^="https://go.trackitalltheway.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root div[data-alias="300x250 Ad 1"], :root a[href^="https://syndicate.contentsserved.com/"], :root a[href^="https://svb-analytics.trackerrr.com/"], :root a[href^="https://streamate.com/landing/click/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://slkmis.com/"], :root a[href^="https://s.zlink3.com/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://s.optzsrv.com/"], :root a[href^="https://random-affiliate.atimaze.com/"], :root a[href^="https://quotationfirearmrevision.com/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://ak.oalsauwy.net/"], :root a[href^="https://softwa.cfd/"], :root a[href^="https://play1ad.shop/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://www.dating-finder.com/?ai_d="], :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root app-ad, :root a[href^="https://postback1win.com/"], :root a[href^="https://a.adtng.com/"], :root a[href^="https://playnano.online/offerwalls/?ref="], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root a[href^="https://pb-track.com/"], :root a[href^="https://pb-front.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://ngineet.cfd/"], :root a[href^="https://upsups.click/"], :root a[href^="https://ndt5.net/"], :root a[href^="http://eighteenderived.com/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root a[href^="https://www.sugarinstant.com/?partner_id="], :root a[href^="https://m.do.co/c/"] > img, :root [data-ad-name], :root a[href^="https://loboclick.com/"], :root .nya-slot[style], :root a[href^="https://a.bestcontentweb.top/"], :root a[href^="https://lobimax.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://landing1.brazzersnetwork.com"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://join.virtuallust3d.com/"], :root a[href^="https://kiksajex.com/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://www.mypornstarcams.com/landing/click/"], :root a[href^="https://snowdayonline.xyz/"], :root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://jaxofuna.com/"], :root a[href^="https://itubego.com/video-downloader/?affid="], :root a[href^="https://italarizege.xyz/"], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root a[href^="https://hot-growngames.life/"], :root a[href^="https://golinks.work/"], :root a[href^="https://go.xxxvjmp.com/"], :root a[href^="https://zirdough.net/"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root a[href^="https://go.xxxiijmp.com"], :root a[href^="https://go.xtbaffiliates.com/"], :root .OUTBRAIN[data-widget-id^="FMS_REELD_"], :root [data-role="tile-ads-module"], :root a[href^="https://go.xlviirdr.com"], :root a[href^="https://go.xlviiirdr.com"], :root a[href^="https://ismlks.com/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://go.xlirdr.com"], :root [data-css-class="dfp-inarticle"], :root a[href^="https://l.hyenadata.com/"], :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://lijavaxa.com/"], :root a[href^="https://go.goaserv.com/"], :root a[href^="https://t.hrtye.com/"], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://go.dmzjmp.com"], :root div[class^="Display_displayAd"], :root a[href^="https://www.bang.com/?aff="], :root #mgb-container > #mgb, :root a[href^="https://go.admjmp.com"], :root div[id^="div-gpt-"], :root a[href^="https://gml-grp.com/"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a[href^="https://gamingadlt.com/?offer="], :root a[href^="https://www.adskeeper.com"], :root [href^="https://www.reimageplus.com/"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://clicks.affstrack.com/"] > img, :root a[href^="https://ak.hauchiwu.com/"], :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://engine.blueistheneworanges.com/"], :root a[href^="https://eergortu.net/"], :root a[href^="https://dl-protect.net/"], :root a[href^="https://rixofa.com/"], :root a[href^="https://disobediencecalculatormaiden.com/"], :root a[href^="https://datingoffers30.info/"], :root a[href*=".foxqck.com/"], :root a[href^="https://ctosrd.com/"], :root a[href^="https://clixtrac.com/"], :root [href^="https://noqreport.com/"] > img, :root a[href^="https://clicks.pipaffiliates.com/"], :root a[href^="https://datewhisper.life/"], :root a[href^="https://get-link.xyz/"], :root a[href^="https://click.linksynergy.com/fs-bin/"] > img, :root a[href^="https://combodef.com/"], :root AD-TRIPLE-BOX, :root a[href^="https://click.hoolig.app/"], :root a[href^="https://track.totalav.com/"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://go.xlvirdr.com"], :root a[href^="http://www.iyalc.com/"], :root a[href^="https://claring-loccelkin.com/"], :root a[href^="https://s.ma3ion.com/"], :root a[href^="https://cams.imagetwist.com/in/?track="], :root a[href^="https://t.ajrkm1.com/"], :root [href="https://masstortfinancing.com"] img, :root a[href^="https://bongacams10.com/track?"], :root a[href*=".g2afse.com/"], :root a[href^="https://bodelen.com/"], :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root a[href^="https://banners.livepartners.com/"], :root a[href^="http://revolvemockerycopper.com/"], :root a[href^="https://awptjmp.com/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://intenseaffiliates.com/redirect/"], :root a[href^="https://aweptjmp.com/"], :root [class^="s2nPlayer"], :root a[href^="https://chaturbate.jjgirls.com/?track="], :root a[href^="https://ausoafab.net/"], :root a[href^="https://activate-game.com/"], :root .scroll-fixable.rail-right > .deals-rail, :root [data-wpas-zoneid], :root a[href^="https://a2.adform.net/"], :root a[href^="https://auesk.cfd/"], :root a[href^="https://ak.psaltauw.net/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root div[id^="ad-position-"], :root a[href^="https://leg.xyz/?track="], :root a[href^="https://www.toprevenuegate.com/"], :root a[href^="https://bc.game/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="https://adultfriendfinder.com/go/"], :root a[href^="https://ads.planetwin365affiliate.com/"], :root a[href^="https://ads.leovegas.com/"], :root a[href^="https://a.candyai.love/"], :root [data-m-ad-id], :root a[href^="https://a-ads.com/"], :root div[id^="rc-widget-"], :root a[href^="http://eslp34af.click/"], :root a[href^="https://turnstileunavailablesite.com/"], :root a[href^="https://chaturbate.com/in/?"], :root [href^="https://freecourseweb.com/"] > .sitefriend, :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href*="&maxads="], :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="https://1betandgonow.com/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="http://www.mrskin.com/tour"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="https://getvideoz.click/"], :root a[href^="http://troopsassistedstupidity.com/"], :root a[href^="https://bongacams2.com/track?"], :root a[href^="http://trk.globwo.online/"], :root a-ad, :root a[href^="https://offhandpump.com/"], :root a[href^="http://stickingrepute.com/"], :root #slashboxes > .deals-rail, :root a[href^="http://premonitioninventdisagree.com/"], :root a[href^="http://naggingirresponsible.com/"], :root a[href^="https://in.rabbtrk.com/"], :root div[data-ad-targeting], :root a[href^="https://hotplaystime.life/"], :root a[href^="http://www.h4trck.com/"], :root a[href^="https://81ac.xyz/"], :root a[href^="http://guestblackmail.com/"], :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root a[href^="https://ad.kubiccomps.icu/"], :root [href^="https://www.mypatriotsupply.com/"] > img, :root a[href^="https://trk.softonixs.xyz/"], :root a[href^="https://sexynearme.com/"], :root a[href^="https://myclick-2.com/"], :root a[href^="http://dragnag.com/"], :root [id^="div-gpt-ad"], :root .ob_container .item-container-obpd, :root div[id^="yandex_ad"], :root a[href^="https://pb-imc.com/"], :root a[href^="http://deskfrontfreely.com/"], :root a[href^="https://track.adform.net/"], :root a[href^="http://avthelkp.net/"], :root a[href^="https://a.medfoodhome.com/"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="https://engine.flixtrial.com/"], :root [data-type="ad-vertical"], :root a[href^="http://annulmentequitycereals.com/"], :root citrus-ad-wrapper, :root a[href^="https://go.grinsbest.com/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="//startgaming.net/tienda/" i], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="//s.st1net.com/splash.php"], :root a[href^="https://a.medfoodsafety.com/"], :root a[href^="//go.eabids.com/"], :root a[href^=" https://www.friendlyduck.com/AF_"], :root a[href*="/jump/next.php?r="], :root [href^="https://ilovemyfreedoms.com/landing-"], :root a[href^="https://go.nordvpn.net/aff"] > img, :root .\[\&_\.gdprAdTransparencyCogWheelButton\]\:\!pjra-z-\[5\], :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root [href^="https://www.profitablegatecpm.com/"], :root div[id^="lazyad-"], :root a[href^="http://com-1.pro/"], :root a[href*=".cfm?domain="][href*="&fp="], :root [data-dynamic-ads], :root a[href^="https://xbet-4.com/"], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root [data-ad-width], :root [data-block-type="ad"], :root [href^="https://join.playboyplus.com/track/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root a[href^="https://ab.advertiserurl.com/aff/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://trk.sportsflix4k.club/"], :root a[href^="http://dragfault.com/"], :root [href^="https://cpa.10kfreesilver.com/"], :root a[href^="https://a.bestcontentfood.top/"], :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[data-href^="http://ads.trafficjunky.net/"], :root a[href^="https://go.xlivrdr.com"], :root [onclick^="location.href='https://1337x.vpnonly.site/"], :root [name^="google_ads_iframe"], :root [id^="section-ad-banner"], :root [data-advadstrackid], :root a[href^="http://muzzlematrix.com/"], :root [href^="https://zone.gotrackier.com/"], :root [href^="https://www.restoro.com/"], :root a[href^="https://bngpt.com/"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="http://adultfriendfinder.com/go/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root a[href^="https://tour.mrskin.com/"], :root a[href^="https://vo2.qrlsx.com/"], :root [href^="https://www.avantlink.com/click.php"] img, :root a[href^="https://losingoldfry.com/"], :root [href^="https://routewebtk.com/"], :root a[href^="https://t.ajump1.com/"], :root span[data-ez-ph-id], :root [href^="https://track.aftrk1.com/"], :root div[id^="adngin-"], :root [data-rc-widget], :root a[href^="https://go.hpyjmp.com"], :root [href^="https://mystore.com/"] > img, :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root [href^="https://join.girlsoutwest.com/"], :root [href^="https://join3.bannedsextapes.com"], :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root div[data-adunit], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root [href^="https://wct.link/click?"], :root [href^="https://go.xlrdr.com"], :root a[href^="https://tm-offers.gamingadult.com/"], :root [href^="https://charmingdatings.life/"], :root [href^="https://glersakr.com/"], :root [href^="https://v.investologic.co.uk/"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root [id^="ad-wrap-"], :root a[href*="//jjgirls.com/sex/Chaturbate"], :root [data-id^="div-gpt-ad"], :root a[href^="https://tracker.loropartners.com/"], :root [href^="https://awbbjmp.com/"], :root a[href*=".adsrv.eacdn.com/"], :root [href^="https://antiagingbed.com/discount/"] > img, :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href^="https://bngprm.com/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root a[href^="https://go.strpjmp.com/"], :root a[href^="https://go.bushheel.com/"], :root a[href^="https://ctjdwm.com/"], :root a[href^="https://camfapr.com/landing/click/"], :root [href="//sexcams.plus/"], :root [href^="http://www.mypillow.com/"] > img, :root [href^="https://www.targetingpartner.com/"], :root div[class^="Adstyled__AdWrapper-"], :root a[href^="https://startgaming.net/tienda/" i], :root .section-subheader > .section-hotel-prices-header, :root [href^="https://www.hostg.xyz/"] > img, :root a[href^="https://join.virtualtaboo.com/track/"], :root [id^="ad_sky"], :root #kt_player > a[target="_blank"], :root a[href^="http://bongacams.com/track?"], :root [href^="http://mypillow.com/"] > img, :root [href="https://ourgoldguy.com/contact/"] img, :root [href="https://www.masstortfinancing.com/"] > img, :root a[href^="https://go.rmhfrtnd.com/"], :root [href="https://jdrucker.com/gold"] > img, :root [href^="https://ad.admitad.com/"], :root [href^="https://mypillow.com/"] > img, :root [data-testid="ad_testID"], :root a[href^="http://handgripvegetationhols.com/"], :root [class^="amp-ad-"], :root a[href^="http://tc.tradetracker.net/"] > img, :root [data-ez-name], :root a[href^="https://black77854.com/"], :root [data-revive-zoneid] > iframe, :root [data-testid="adBanner-wrapper"], :root [href^="https://mylead.global/stl/"] > img, :root [href^="https://mypatriotsupply.com/"] > img, :root a[href^="https://witnessjacket.com/"], :root [data-mobile-ad-id], :root a[href^="https://fc.lc/ref/"], :root [data-adshim], :root topadblock, :root a[href^="//s.zlinkd.com/"], :root a[href^="https://bs.serving-sys.com"], :root a[href^="https://go.cmtaffiliates.com/"], :root [href^="https://optimizedelite.com/"] > img, :root [data-name="adaptiveConstructorAd"], :root a[href^="http://partners.etoro.com/"], :root [href^="https://goldcometals.com/clk.trk"], :root [data-desktop-ad-id], :root [href^="https://www.cloudways.com/en/?id"], :root a[href^="https://www.liquidfire.mobi/"], :root .grid > .container > #aside-promotion, :root DFP-AD, :root [id^="ad_slider"], :root [data-adbridg-ad-class], :root a[href^="https://linkboss.shop/"], :root [data-adblockkey], :root [onclick*="content.ad/"], :root [data-ad-manager-id], :root AMP-AD, :root [data-ad-cls], :root a[href^="https://6-partner.com/"], :root [href^="https://affiliate.fastcomet.com/"] > img, :root a[href^="https://go.mnaspm.com/"], :root [class^="adDisplay-module"], :root AD-SLOT, :root #kt_player > div[style="position: absolute; inset: 0px; z-index: 170;"], :root [data-freestar-ad][id], :root a[href^="https://go.xxxjmp.com"], :root #leader-companion > a[href], :root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"], :root [data-ad-module], :root app-advertisement, :root a[href^="https://getmatchedlocally.com/"], :root a[href^="https://clickins.slixa.com/"], :root [class^="div-gpt-ad"], :root a[href^="https://traffdaq.com/"], :root a[href^="https://cam4com.go2cloud.org/"], :root a[href^="http://li.blogtrottr.com/click?"], :root .ob_dual_right > .ob_ads_header ~ .odb_div { display: none !important; }</style><style type="text/css" id="operaUserStyle"></style><div id="gs-injected"><div id="gs-injected-global"><style id="variables">:root {
+--colors-rose50: #fff1f2;
+--colors-rose100: #ffe4e6;
+--colors-rose200: #fecdd3;
+--colors-rose300: #fda4af;
+--colors-rose400: #fb7185;
+--colors-rose500: #f43f5e;
+--colors-rose600: #e11d48;
+--colors-rose700: #be123c;
+--colors-rose800: #9f1239;
+--colors-rose900: #881337;
+--colors-pink50: #fdf2f8;
+--colors-pink100: #fce7f3;
+--colors-pink200: #fbcfe8;
+--colors-pink300: #f9a8d4;
+--colors-pink400: #f472b6;
+--colors-pink500: #ec4899;
+--colors-pink600: #db2777;
+--colors-pink700: #be185d;
+--colors-pink800: #9d174d;
+--colors-pink900: #831843;
+--colors-fuchsia50: #fdf4ff;
+--colors-fuchsia100: #fae8ff;
+--colors-fuchsia200: #f5d0fe;
+--colors-fuchsia300: #f0abfc;
+--colors-fuchsia400: #e879f9;
+--colors-fuchsia500: #d946ef;
+--colors-fuchsia600: #c026d3;
+--colors-fuchsia700: #a21caf;
+--colors-fuchsia800: #86198f;
+--colors-fuchsia900: #701a75;
+--colors-purple50: #faf5ff;
+--colors-purple100: #f3e8ff;
+--colors-purple200: #e9d5ff;
+--colors-purple300: #d8b4fe;
+--colors-purple400: #c084fc;
+--colors-purple500: #a855f7;
+--colors-purple600: #9333ea;
+--colors-purple700: #7e22ce;
+--colors-purple800: #6b21a8;
+--colors-purple900: #581c87;
+--colors-violet50: #f5f3ff;
+--colors-violet100: #ede9fe;
+--colors-violet200: #ddd6fe;
+--colors-violet300: #c4b5fd;
+--colors-violet400: #a78bfa;
+--colors-violet500: #8b5cf6;
+--colors-violet600: #7c3aed;
+--colors-violet700: #6d28d9;
+--colors-violet800: #5b21b6;
+--colors-violet900: #4c1d95;
+--colors-indigo50: #eef2ff;
+--colors-indigo100: #e0e7ff;
+--colors-indigo200: #c7d2fe;
+--colors-indigo300: #a5b4fc;
+--colors-indigo400: #818cf8;
+--colors-indigo500: #6366f1;
+--colors-indigo600: #4f46e5;
+--colors-indigo700: #4338ca;
+--colors-indigo800: #3730a3;
+--colors-indigo900: #312e81;
+--colors-blue50: #eff6ff;
+--colors-blue100: #dbeafe;
+--colors-blue200: #bfdbfe;
+--colors-blue300: #93c5fd;
+--colors-blue400: #60a5fa;
+--colors-blue500: #3b82f6;
+--colors-blue600: #2563eb;
+--colors-blue700: #1d4ed8;
+--colors-blue800: #1e40af;
+--colors-blue900: #1e3a8a;
+--colors-lightBlue50: #f0f9ff;
+--colors-lightBlue100: #e0f2fe;
+--colors-lightBlue200: #bae6fd;
+--colors-lightBlue300: #7dd3fc;
+--colors-lightBlue400: #38bdf8;
+--colors-lightBlue500: #0ea5e9;
+--colors-lightBlue600: #0284c7;
+--colors-lightBlue700: #0369a1;
+--colors-lightBlue800: #075985;
+--colors-lightBlue900: #0c4a6e;
+--colors-darkBlue50: #dbf4ff;
+--colors-darkBlue100: #addbff;
+--colors-darkBlue200: #7cc2ff;
+--colors-darkBlue300: #4aa9ff;
+--colors-darkBlue400: #1a91ff;
+--colors-darkBlue500: #0077e6;
+--colors-darkBlue600: #005db4;
+--colors-darkBlue700: #004282;
+--colors-darkBlue800: #002851;
+--colors-darkBlue900: #000e21;
+--colors-cyan50: #ecfeff;
+--colors-cyan100: #cffafe;
+--colors-cyan200: #a5f3fc;
+--colors-cyan300: #67e8f9;
+--colors-cyan400: #22d3ee;
+--colors-cyan500: #06b6d4;
+--colors-cyan600: #0891b2;
+--colors-cyan700: #0e7490;
+--colors-cyan800: #155e75;
+--colors-cyan900: #164e63;
+--colors-teal50: #f0fdfa;
+--colors-teal100: #ccfbf1;
+--colors-teal200: #99f6e4;
+--colors-teal300: #5eead4;
+--colors-teal400: #2dd4bf;
+--colors-teal500: #14b8a6;
+--colors-teal600: #0d9488;
+--colors-teal700: #0f766e;
+--colors-teal800: #115e59;
+--colors-teal900: #134e4a;
+--colors-emerald50: #ecfdf5;
+--colors-emerald100: #d1fae5;
+--colors-emerald200: #a7f3d0;
+--colors-emerald300: #6ee7b7;
+--colors-emerald400: #34d399;
+--colors-emerald500: #10b981;
+--colors-emerald600: #059669;
+--colors-emerald700: #047857;
+--colors-emerald800: #065f46;
+--colors-emerald900: #064e3b;
+--colors-green50: #f0fdf4;
+--colors-green100: #dcfce7;
+--colors-green200: #bbf7d0;
+--colors-green300: #86efac;
+--colors-green400: #4ade80;
+--colors-green500: #22c55e;
+--colors-green600: #16a34a;
+--colors-green700: #15803d;
+--colors-green800: #166534;
+--colors-green900: #14532d;
+--colors-lime50: #f7fee7;
+--colors-lime100: #ecfccb;
+--colors-lime200: #d9f99d;
+--colors-lime300: #bef264;
+--colors-lime400: #a3e635;
+--colors-lime500: #84cc16;
+--colors-lime600: #65a30d;
+--colors-lime700: #4d7c0f;
+--colors-lime800: #3f6212;
+--colors-lime900: #365314;
+--colors-yellow50: #fefce8;
+--colors-yellow100: #fef9c3;
+--colors-yellow200: #fef08a;
+--colors-yellow300: #fde047;
+--colors-yellow400: #facc15;
+--colors-yellow500: #eab308;
+--colors-yellow600: #ca8a04;
+--colors-yellow700: #a16207;
+--colors-yellow800: #854d0e;
+--colors-yellow900: #713f12;
+--colors-amber50: #fffbeb;
+--colors-amber100: #fef3c7;
+--colors-amber200: #fde68a;
+--colors-amber300: #fcd34d;
+--colors-amber400: #fbbf24;
+--colors-amber500: #f59e0b;
+--colors-amber600: #d97706;
+--colors-amber700: #b45309;
+--colors-amber800: #92400e;
+--colors-amber900: #78350f;
+--colors-orange50: #fff7ed;
+--colors-orange100: #ffedd5;
+--colors-orange200: #fed7aa;
+--colors-orange300: #fdba74;
+--colors-orange400: #fb923c;
+--colors-orange500: #f97316;
+--colors-orange600: #ea580c;
+--colors-orange700: #c2410c;
+--colors-orange800: #9a3412;
+--colors-orange900: #7c2d12;
+--colors-red50: #fef2f2;
+--colors-red100: #fee2e2;
+--colors-red200: #fecaca;
+--colors-red300: #fca5a5;
+--colors-red400: #f87171;
+--colors-red500: #ef4444;
+--colors-red600: #dc2626;
+--colors-red700: #b91c1c;
+--colors-red800: #991b1b;
+--colors-red900: #7f1d1d;
+--colors-warmGray50: #fafaf9;
+--colors-warmGray100: #f5f5f4;
+--colors-warmGray200: #e7e5e4;
+--colors-warmGray300: #d6d3d1;
+--colors-warmGray400: #a8a29e;
+--colors-warmGray500: #78716c;
+--colors-warmGray600: #57534e;
+--colors-warmGray700: #44403c;
+--colors-warmGray800: #292524;
+--colors-warmGray900: #1c1917;
+--colors-trueGray50: #fafafa;
+--colors-trueGray100: #f5f5f5;
+--colors-trueGray200: #e5e5e5;
+--colors-trueGray300: #d4d4d4;
+--colors-trueGray400: #a3a3a3;
+--colors-trueGray500: #737373;
+--colors-trueGray600: #525252;
+--colors-trueGray700: #404040;
+--colors-trueGray800: #262626;
+--colors-trueGray900: #171717;
+--colors-coolGray50: #f9fafb;
+--colors-coolGray100: #f3f4f6;
+--colors-coolGray200: #e5e7eb;
+--colors-coolGray300: #d1d5db;
+--colors-coolGray400: #9ca3af;
+--colors-coolGray500: #6b7280;
+--colors-coolGray600: #4b5563;
+--colors-coolGray700: #374151;
+--colors-coolGray800: #1f2937;
+--colors-coolGray900: #111827;
+--colors-blueGray50: #f8fafc;
+--colors-blueGray100: #f1f5f9;
+--colors-blueGray200: #e2e8f0;
+--colors-blueGray300: #cbd5e1;
+--colors-blueGray400: #94a3b8;
+--colors-blueGray500: #64748b;
+--colors-blueGray600: #475569;
+--colors-blueGray700: #334155;
+--colors-blueGray800: #1e293b;
+--colors-blueGray900: #0f172a;
+--colors-tertiary50: #ecfdf5;
+--colors-tertiary100: #d1fae5;
+--colors-tertiary200: #a7f3d0;
+--colors-tertiary300: #6ee7b7;
+--colors-tertiary400: #34d399;
+--colors-tertiary500: #10b981;
+--colors-tertiary600: #059669;
+--colors-tertiary700: #047857;
+--colors-tertiary800: #065f46;
+--colors-tertiary900: #064e3b;
+--colors-error00: #FEE9E9;
+--colors-error50: #FEE2E2;
+--colors-error100: #FECACA;
+--colors-error200: #FCA5A5;
+--colors-error300: #F87171;
+--colors-error400: #EF4444;
+--colors-error500: #E63535;
+--colors-error600: #DC2626;
+--colors-error700: #B91C1C;
+--colors-error800: #7F1D1D;
+--colors-error900: #991B1B;
+--colors-error950: #220808;
+--colors-success0: #E4FFF4;
+--colors-success50: #CAFFE8;
+--colors-success100: #A2F1C0;
+--colors-success200: #84D3A2;
+--colors-success300: #66B584;
+--colors-success400: #489766;
+--colors-success500: #348352;
+--colors-success600: #2A7948;
+--colors-success700: #206F3E;
+--colors-success800: #166534;
+--colors-success900: #14532D;
+--colors-success950: #071F11;
+--colors-warning50: #fff7ed;
+--colors-warning100: #ffedd5;
+--colors-warning200: #fed7aa;
+--colors-warning300: #fdba74;
+--colors-warning400: #fb923c;
+--colors-warning500: #f97316;
+--colors-warning600: #ea580c;
+--colors-warning700: #c2410c;
+--colors-warning800: #9a3412;
+--colors-warning900: #7c2d12;
+--colors-info50: #f0f9ff;
+--colors-info100: #e0f2fe;
+--colors-info200: #bae6fd;
+--colors-info300: #7dd3fc;
+--colors-info400: #38bdf8;
+--colors-info500: #0ea5e9;
+--colors-info600: #0284c7;
+--colors-info700: #0369a1;
+--colors-info800: #075985;
+--colors-info900: #0c4a6e;
+--colors-light50: #fafaf9;
+--colors-light100: #f5f5f4;
+--colors-light200: #e7e5e4;
+--colors-light300: #d6d3d1;
+--colors-light400: #a8a29e;
+--colors-light500: #78716c;
+--colors-light600: #57534e;
+--colors-light700: #44403c;
+--colors-light800: #292524;
+--colors-light900: #1c1917;
+--colors-primary0: #E5F1FB;
+--colors-primary50: #CCE9FF;
+--colors-primary100: #ADDBFF;
+--colors-primary200: #7CC2FF;
+--colors-primary300: #4AA9FF;
+--colors-primary400: #1A91FF;
+--colors-primary500: #0077E6;
+--colors-primary600: #005DB4;
+--colors-primary700: #004282;
+--colors-primary800: #002851;
+--colors-primary900: #011838;
+--colors-primary950: #000711;
+--colors-secondary0: #F6F6F6;
+--colors-secondary50: #F3F3F3;
+--colors-secondary100: #E9E9E9;
+--colors-secondary200: #DADADA;
+--colors-secondary300: #B0B0B0;
+--colors-secondary400: #737373;
+--colors-secondary500: #5F5F5F;
+--colors-secondary600: #525252;
+--colors-secondary700: #404040;
+--colors-secondary800: #262626;
+--colors-secondary900: #171717;
+--colors-secondary950: #0C0C0C;
+--colors-textLight0: #FCFCFC;
+--colors-textLight50: #F5F5F5;
+--colors-textLight100: #E5E5E5;
+--colors-textLight200: #DBDBDB;
+--colors-textLight300: #D4D4D4;
+--colors-textLight400: #A3A3A3;
+--colors-textLight500: #8C8C8C;
+--colors-textLight600: #737373;
+--colors-textLight700: #525252;
+--colors-textLight800: #404040;
+--colors-textLight900: #262626;
+--colors-textLight950: #171717;
+--colors-textDark0: #FCFCFC;
+--colors-textDark50: #F5F5F5;
+--colors-textDark100: #E5E5E5;
+--colors-textDark200: #DBDBDB;
+--colors-textDark300: #D4D4D4;
+--colors-textDark400: #A3A3A3;
+--colors-textDark500: #8C8C8C;
+--colors-textDark600: #737373;
+--colors-textDark700: #525252;
+--colors-textDark800: #404040;
+--colors-textDark900: #262626;
+--colors-textDark950: #171717;
+--colors-borderDark0: #FCFCFC;
+--colors-borderDark50: #F5F5F5;
+--colors-borderDark100: #E5E5E5;
+--colors-borderDark200: #DBDBDB;
+--colors-borderDark300: #D4D4D4;
+--colors-borderDark400: #A3A3A3;
+--colors-borderDark500: #8C8C8C;
+--colors-borderDark600: #737373;
+--colors-borderDark700: #525252;
+--colors-borderDark800: #404040;
+--colors-borderDark900: #262626;
+--colors-borderDark950: #171717;
+--colors-borderLight0: #FCFCFC;
+--colors-borderLight50: #F5F5F5;
+--colors-borderLight100: #E5E5E5;
+--colors-borderLight200: #DBDBDB;
+--colors-borderLight300: #D4D4D4;
+--colors-borderLight400: #A3A3A3;
+--colors-borderLight500: #8C8C8C;
+--colors-borderLight600: #737373;
+--colors-borderLight700: #525252;
+--colors-borderLight800: #404040;
+--colors-borderLight900: #262626;
+--colors-borderLight950: #171717;
+--colors-backgroundDark0: #FCFCFC;
+--colors-backgroundDark50: #F5F5F5;
+--colors-backgroundDark100: #F1F1F1;
+--colors-backgroundDark200: #DBDBDB;
+--colors-backgroundDark300: #D4D4D4;
+--colors-backgroundDark400: #A3A3A3;
+--colors-backgroundDark500: #8C8C8C;
+--colors-backgroundDark600: #737373;
+--colors-backgroundDark700: #525252;
+--colors-backgroundDark800: #404040;
+--colors-backgroundDark900: #262626;
+--colors-backgroundDark950: #171717;
+--colors-backgroundLight0: #FCFCFC;
+--colors-backgroundLight50: #F5F5F5;
+--colors-backgroundLight100: #F1F1F1;
+--colors-backgroundLight200: #DBDBDB;
+--colors-backgroundLight300: #D4D4D4;
+--colors-backgroundLight400: #A3A3A3;
+--colors-backgroundLight500: #8C8C8C;
+--colors-backgroundLight600: #737373;
+--colors-backgroundLight700: #525252;
+--colors-backgroundLight800: #404040;
+--colors-backgroundLight900: #262626;
+--colors-backgroundLight950: #171717;
+--colors-backgroundLightError: #FEF1F1;
+--colors-backgroundDarkError: #422B2B;
+--colors-backgroundLightWarning: #FFF4EB;
+--colors-backgroundDarkWarning: #412F23;
+--colors-backgroundLightSuccess: #EDFCF2;
+--colors-backgroundDarkSuccess: #1C2B21;
+--colors-backgroundLightInfo: #EBF8FE;
+--colors-backgroundDarkInfo: #1A282E;
+--colors-backgroundLightMuted: #F6F6F7;
+--colors-backgroundDarkMuted: #252526;
+--colors-white: #FFFFFF;
+--colors-black: #000000;
+--space-0: 0px;
+--space-1: 4px;
+--space-2: 8px;
+--space-3: 12px;
+--space-4: 16px;
+--space-5: 20px;
+--space-6: 24px;
+--space-7: 28px;
+--space-8: 32px;
+--space-9: 36px;
+--space-10: 40px;
+--space-11: 44px;
+--space-12: 48px;
+--space-16: 64px;
+--space-20: 80px;
+--space-24: 96px;
+--space-32: 128px;
+--space-40: 160px;
+--space-48: 192px;
+--space-56: 224px;
+--space-64: 256px;
+--space-72: 288px;
+--space-80: 320px;
+--space-96: 384px;
+--space-px: 1px;
+--space-0\u002e5: 2px;
+--space-1\u002e5: 6px;
+--space-2\u002e5: 10px;
+--space-3\u002e5: 14px;
+--space-4\u002e5: 18px;
+--space-1\u002f2: 50%;
+--space-1\u002f3: 33.333%;
+--space-2\u002f3: 66.666%;
+--space-1\u002f4: 25%;
+--space-2\u002f4: 50%;
+--space-3\u002f4: 75%;
+--space-1\u002f5: 20%;
+--space-2\u002f5: 40%;
+--space-3\u002f5: 60%;
+--space-4\u002f5: 80%;
+--space-1\u002f6: 16.666%;
+--space-2\u002f6: 33.333%;
+--space-3\u002f6: 50%;
+--space-4\u002f6: 66.666%;
+--space-5\u002f6: 83.333%;
+--space-full: 100%;
+--borderWidths-0: 0px;
+--borderWidths-1: 1px;
+--borderWidths-2: 2px;
+--borderWidths-4: 4px;
+--borderWidths-8: 8px;
+--radii-none: 0px;
+--radii-xs: 2px;
+--radii-sm: 4px;
+--radii-md: 6px;
+--radii-lg: 8px;
+--radii-xl: 12px;
+--radii-2xl: 16px;
+--radii-3xl: 24px;
+--radii-full: 9999px;
+--breakpoints-base: 0;
+--breakpoints-sm: 480;
+--breakpoints-md: 768;
+--breakpoints-lg: 992;
+--breakpoints-xl: 1280;
+--mediaQueries-base: @media screen and (min-width: 0);
+--mediaQueries-xs: @media screen and (min-width: 400px);
+--mediaQueries-sm: @media screen and (min-width: 480px);
+--mediaQueries-md: @media screen and (min-width: 768px);
+--mediaQueries-lg: @media screen and (min-width: 992px);
+--mediaQueries-xl: @media screen and (min-width: 1280px);
+--letterSpacings-xs: -0.4px;
+--letterSpacings-sm: -0.2px;
+--letterSpacings-md: 0px;
+--letterSpacings-lg: 0.2px;
+--letterSpacings-xl: 0.4px;
+--letterSpacings-2xl: 1.6px;
+--lineHeights-2xs: 16px;
+--lineHeights-xs: 18px;
+--lineHeights-sm: 20px;
+--lineHeights-md: 22px;
+--lineHeights-lg: 24px;
+--lineHeights-xl: 28px;
+--lineHeights-2xl: 32px;
+--lineHeights-3xl: 40px;
+--lineHeights-4xl: 48px;
+--lineHeights-5xl: 56px;
+--lineHeights-6xl: 72px;
+--lineHeights-7xl: 90px;
+--fontWeights-hairline: 100;
+--fontWeights-thin: 200;
+--fontWeights-light: 300;
+--fontWeights-normal: 400;
+--fontWeights-medium: 500;
+--fontWeights-semibold: 600;
+--fontWeights-bold: 700;
+--fontWeights-extrabold: 800;
+--fontWeights-black: 900;
+--fontWeights-extraBlack: 950;
+--fonts-heading: undefined;
+--fonts-body: undefined;
+--fonts-mono: undefined;
+--fontSizes-2xs: 10px;
+--fontSizes-xs: 12px;
+--fontSizes-sm: 14px;
+--fontSizes-md: 16px;
+--fontSizes-lg: 18px;
+--fontSizes-xl: 20px;
+--fontSizes-2xl: 24px;
+--fontSizes-3xl: 30px;
+--fontSizes-4xl: 36px;
+--fontSizes-5xl: 48px;
+--fontSizes-6xl: 60px;
+--fontSizes-7xl: 72px;
+--fontSizes-8xl: 96px;
+--fontSizes-9xl: 128px;
+--opacity-0: 0;
+--opacity-5: 0.05;
+--opacity-10: 0.1;
+--opacity-20: 0.2;
+--opacity-25: 0.25;
+--opacity-30: 0.3;
+--opacity-40: 0.4;
+--opacity-50: 0.5;
+--opacity-60: 0.6;
+--opacity-70: 0.7;
+--opacity-75: 0.75;
+--opacity-80: 0.8;
+--opacity-90: 0.9;
+--opacity-95: 0.95;
+--opacity-100: 1;
+}</style><style id="1jpg9cr">@media screen { [data-style~="1jpg9cr-uipiwb"] {;} [data-style~="1jpg9cr-ijzue2"] {box-shadow:-2px 2px 8px rgba(38,38,38,0.50);} [data-style~="1jpg9cr-15lnife"] {box-shadow:0px 3px 8px rgba(38,38,38,0.50);} [data-style~="1jpg9cr-1dvkyl5"] {box-shadow:2px 2px 8px rgba(38,38,38,0.50);} [data-style~="1jpg9cr-1bm4nlc"] {box-shadow:0px -3px 8px rgba(38,38,38,0.50);} [data-style~="1jpg9cr-1li7jle"] {box-shadow:0px 3px 8px rgba(38,38,38,0.20);} [data-style~="1jpg9cr-ej8lsu"] {box-shadow:0px 0px 10px rgba(38,38,38,0.10);} [data-style~="1jpg9cr-1xl6mxe"] {box-shadow:0px 0px 20px rgba(38,38,38,0.10);} [data-style~="1jpg9cr-1j3ydzf"] {box-shadow:0px 0px 30px rgba(38,38,38,0.10);} [data-style~="1jpg9cr-qaltvd"] {box-shadow:0px 0px 40px rgba(38,38,38,0.10);}}</style></div><div id="gs-injected-forwarded-base"></div><div id="gs-injected-forwarded-descendant-base"></div><div id="gs-injected-forwarded-variant"></div><div id="gs-injected-forwarded-descendant-variant"></div><div id="gs-injected-boot-base"><style id="153ujdk">@media screen { [data-style~="153ujdk-uipiwb"] {;}}</style></div><div id="gs-injected-extended-base"><style id="896xuz">@media screen { [data-style~="896xuz-uipiwb"] {;}}</style></div><div id="gs-injected-composed-base"></div><div id="gs-injected-boot-base-state"></div><div id="gs-injected-extended-base-state"></div><div id="gs-injected-composed-base-state"></div><div id="gs-injected-boot-descendant-base"></div><div id="gs-injected-extended-descendant-base"></div><div id="gs-injected-composed-descendant-base"></div><div id="gs-injected-boot-descendant-base-state"></div><div id="gs-injected-extended-descendant-base-state"></div><div id="gs-injected-composed-descendant-base-state"></div><div id="gs-injected-boot-variant"></div><div id="gs-injected-extended-variant"></div><div id="gs-injected-composed-variant"></div><div id="gs-injected-boot-variant-state"></div><div id="gs-injected-extended-variant-state"></div><div id="gs-injected-composed-variant-state"></div><div id="gs-injected-boot-descendant-variant"></div><div id="gs-injected-extended-descendant-variant"></div><div id="gs-injected-composed-descendant-variant"></div><div id="gs-injected-boot-descendant-variant-state"></div><div id="gs-injected-extended-descendant-variant-state"></div><div id="gs-injected-composed-descendant-variant-state"></div><div id="gs-injected-inline-descendant-base"></div><div id="gs-injected-passing-base"></div><div id="gs-injected-inline-variant"></div><div id="gs-injected-inline-base"></div><div id="gs-injected-inline-base-state"></div></div><style id="ReanimatedPredefinedWebAnimationsStyle"></style><style id="ReanimatedCustomWebAnimationsStyle"></style><style>.vue-notification-group{display:block;position:fixed;z-index:5000}.vue-notification-wrapper{display:block;overflow:hidden;width:100%;margin:0;padding:0}.notification-title{font-weight:600}.vue-notification-template{display:block;box-sizing:border-box;background:white;text-align:left}.vue-notification{display:block;box-sizing:border-box;text-align:left;font-size:12px;padding:10px;margin:0 5px 5px;color:#fff;background:#44A4FC;border-left:5px solid #187FE7}.vue-notification.warn{background:#ffb648;border-left-color:#f48a06}.vue-notification.error{background:#E54D42;border-left-color:#b82e24}.vue-notification.success{background:#68CD86;border-left-color:#42a85f}.vn-fade-enter-active,.vn-fade-leave-active,.vn-fade-move{transition:all .5s}.vn-fade-enter-from,.vn-fade-leave-to{opacity:0}</style><style>.vue-notification-group{display:block;position:fixed;z-index:5000}.vue-notification-wrapper{display:block;overflow:hidden;width:100%;margin:0;padding:0}.notification-title{font-weight:600}.vue-notification-template{display:block;box-sizing:border-box;background:white;text-align:left}.vue-notification{display:block;box-sizing:border-box;text-align:left;font-size:12px;padding:10px;margin:0 5px 5px;color:#fff;background:#44A4FC;border-left:5px solid #187FE7}.vue-notification.warn{background:#ffb648;border-left-color:#f48a06}.vue-notification.error{background:#E54D42;border-left-color:#b82e24}.vue-notification.success{background:#68CD86;border-left-color:#42a85f}.vn-fade-enter-active,.vn-fade-leave-active,.vn-fade-move{transition:all .5s}.vn-fade-enter-from,.vn-fade-leave-to{opacity:0}</style></head><body data-theme-id="light"><div id="root"><div class="css-view-175oi2r r-flex-13awgt0"><div class="css-view-175oi2r r-alignItems-1awozwy r-backgroundColor-kemksi r-flex-13awgt0 r-justifyContent-1777fci r-padding-d23pfw"><h1 dir="auto" aria-level="1" role="heading" class="css-text-146c3p1 r-borderBottomColor-1euagl r-borderBottomWidth-qklmqi r-color-jwli3a r-fontSize-3i2nvb r-fontWeight-vw2c0b r-marginBottom-6gpygo r-paddingBottom-kzbkwu r-textAlign-q4m81j">Unmatched Route</h1><h2 dir="auto" aria-level="2" role="heading" class="css-text-146c3p1 r-color-jwli3a r-fontSize-1i10wst r-marginBottom-6gpygo r-textAlign-q4m81j">Page could not be found. <span class="css-textHasAncestor-1jxf684 r-color-18u1ve8 r-textAlign-q4m81j r-cursor-1loqt21">Go back.</span></h2><a href="https://e874-191-240-121-34.ngrok-free.app/server/admin/getPedidos" dir="auto" role="link" class="css-text-146c3p1 r-color-18u1ve8 r-textAlign-q4m81j r-cursor-1loqt21">https://e874-191-240-121-34.ngrok-free.app/server/admin/getPedidos</a><a href="https://e874-191-240-121-34.ngrok-free.app/_sitemap" dir="auto" role="link" class="css-text-146c3p1 r-color-18u1ve8 r-textAlign-q4m81j r-cursor-1loqt21" style="margin-top: 8px;">Sitemap</a></div></div></div><script src="./getPedidos_files/node_modules_expo-router_entry.bundle" defer=""></script>
+<div style="position: fixed; left: 0px; top: 0px; width: 0px; height: 0px; z-index: -1; overflow: hidden; visibility: hidden; transition-duration: 0.05s; transition-property: padding; transition-delay: 0s; padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right);"></div><div class="volume-up-wrapper"><div class="volume-up-indicator">100 %</div></div><div id="aroxhms0a3"><template shadowrootmode="closed"><div id="n96oprw3u"><style type="text/css">
+  @import 'chrome-extension://gidejehfgombmkfflghejpncblgfkagj/app.css';
+</style>
+<div id="cuponomia" data-v-app=""><div></div></div>
+</div></template></div></body></html>

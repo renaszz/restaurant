@@ -1,0 +1,140 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Restaurante {
+  id            String       @id @default(uuid())
+  nome          String
+  imagemURL     String
+  TaxaEntrega   Decimal      @db.Decimal(10, 2)
+  TempoEstimado Int
+  categorias    Categorias[]
+  produtos      Produtos[]
+}
+
+model Categorias {
+  id            String      @id @default(uuid())
+  nome          String
+  imagemURL     String
+  restaurante   Restaurante @relation(fields: [idRestaurante], references: [id])
+  idRestaurante String
+  produtos      Produtos[]
+  cardapio      Cardapio[]
+}
+
+model Produtos {
+  id                  String           @id @default(uuid())
+  nome                String
+  descricao           String
+  imagemUrl           String
+  preco               Decimal          @db.Decimal(10, 2)
+  porcentagemDesconto Int              @default(0)
+  idRestaurante       String
+  restaurante         Restaurante      @relation(fields: [idRestaurante], references: [id])
+  categoria           Categorias       @relation(fields: [idCategoria], references: [id])
+  idCategoria         String
+  PedidoProdutos      PedidoProdutos[]
+}
+
+model Cardapio {
+  id              Int               @id @default(autoincrement())
+  secao           String
+  categoria       Categorias        @relation(fields: [idCategoria], references: [id])
+  idCategoria     String
+  acompanhamentos Acompanhamentos[]
+  carnes          Carnes[]
+  legumes         Legumes[]
+  saladas         Saladas[]
+}
+
+model Acompanhamentos {
+  id         Int      @id @default(autoincrement())
+  nome       String
+  descricao  String
+  imagemURL  String
+  cardapio   Cardapio @relation(fields: [idCardapio], references: [id])
+  idCardapio Int
+}
+
+model Carnes {
+  id         Int      @id @default(autoincrement())
+  nome       String
+  descricao  String
+  imagemURL  String
+  cardapio   Cardapio @relation(fields: [idCardapio], references: [id])
+  idCardapio Int
+}
+
+model Legumes {
+  id         Int      @id @default(autoincrement())
+  nome       String
+  descricao  String
+  imagemURL  String
+  cardapio   Cardapio @relation(fields: [idCardapio], references: [id])
+  idCardapio Int
+}
+
+model Saladas {
+  id         Int      @id @default(autoincrement())
+  nome       String
+  descricao  String
+  imagemURL  String
+  cardapio   Cardapio @relation(fields: [idCardapio], references: [id])
+  idCardapio Int
+}
+
+model User {
+  id       String    @id @default(uuid())
+  nome     String
+  email    String    @unique
+  password String
+  endereco String?
+  pedidos  Pedidos[]
+}
+
+model Pedidos {
+  id             String           @id @default(uuid())
+  userId         String
+  user           User             @relation(fields: [userId], references: [id])
+  produtos       PedidoProdutos[]
+  TaxaEntrega    Decimal          @db.Decimal(10, 2)
+  TempoEstimado  Int
+  subtotal       Decimal          @db.Decimal(10, 2)
+  total          Decimal          @db.Decimal(10, 2)
+  createdAt      DateTime       @default(now())
+  status         PedidoStatus
+  metodoPay      Pagamentos
+}
+
+model PedidoProdutos {
+  id         String   @id @default(uuid())
+  idPedido   String
+  pedidos    Pedidos  @relation(fields: [idPedido], references: [id])
+  idProdutos String
+  descricao  String?
+  produtos   Produtos @relation(fields: [idProdutos], references: [id])
+  quant      Int
+}
+enum PedidoStatus {
+  CONFIRMADO
+  CANCELADO
+  PREPARANDO
+  TRANSPORTE
+  CONCLUIDO
+}
+enum Pagamentos {
+  CARTAO
+  DINHEIRO
+  PIX
+}
+
+model Admin {
+  id       Int       @id @default(autoincrement())
+  email    String    @unique
+  password String
+}
