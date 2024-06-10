@@ -47,7 +47,7 @@ export default function Enderecos() {
         <Heading textAlign="center" mb={'$4'} size="xl">
           Meu Endereço
         </Heading>
-        <Text color="$coolGray400">Insira o seu endereço</Text>
+        <Text color="$coolGray400">Insira o seu novo endereço</Text>
         <Input variant="outline">
           <InputField
             onChangeText={setNewEndereco}
